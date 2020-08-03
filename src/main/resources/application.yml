@@ -1,0 +1,9 @@
+spring.jpa.hibernate.ddl-auto: none
+spring.datasource.url: jdbc:hsqldb:file:hsqldb/addon-db # Use a file-based backing store for HSQL
+
+addon:
+  key: jira_deps
+  base-url: http://localhost
+
+logging.level.com.atlassian.connect.spring: DEBUG
+spring.profiles.active: @spring.profiles.active@

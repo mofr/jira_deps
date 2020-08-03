@@ -1,0 +1,63 @@
+{
+  "id": 2,
+  "name": "Test Scrum board",
+  "type": "scrum",
+  "self": "https://mofr-hello-world.atlassian.net/rest/agile/1.0/board/2/configuration",
+  "location": {
+    "type": "project",
+    "key": "JC",
+    "id": "10000",
+    "self": "https://mofr-hello-world.atlassian.net/rest/api/2/project/10000",
+    "name": "Jira Calendar"
+  },
+  "filter": {
+    "id": "10002",
+    "self": "https://mofr-hello-world.atlassian.net/rest/api/2/filter/10002"
+  },
+  "columnConfig": {
+    "columns": [
+      {
+        "name": "To Do",
+        "statuses": [
+          {
+            "id": "10001",
+            "self": "https://mofr-hello-world.atlassian.net/rest/api/2/status/10001"
+          },
+          {
+            "id": "10000",
+            "self": "https://mofr-hello-world.atlassian.net/rest/api/2/status/10000"
+          }
+        ]
+      },
+      {
+        "name": "In Progress",
+        "statuses": [
+          {
+            "id": "3",
+            "self": "https://mofr-hello-world.atlassian.net/rest/api/2/status/3"
+          }
+        ]
+      },
+      {
+        "name": "Done",
+        "statuses": [
+          {
+            "id": "10002",
+            "self": "https://mofr-hello-world.atlassian.net/rest/api/2/status/10002"
+          }
+        ]
+      }
+    ],
+    "constraintType": "none"
+  },
+  "estimation": {
+    "type": "field",
+    "field": {
+      "fieldId": "customfield_10032",
+      "displayName": "Story Points"
+    }
+  },
+  "ranking": {
+    "rankCustomFieldId": 10019
+  }
+}

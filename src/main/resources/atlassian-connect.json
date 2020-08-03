@@ -1,0 +1,25 @@
+{
+  "key": "${addon.key}",
+  "baseUrl": "${addon.base-url}",
+  "name": "Dependencies for Jira",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed",
+    "uninstalled": "/uninstalled"
+  },
+  "scopes": ["READ"],
+  "modules": {
+    "generalPages": [
+      {
+        "key": "atlaskit-page-jira",
+        "location": "system.top.navigation.bar",
+        "name": {
+          "value": "Dependencies"
+        },
+        "url": "/deps"
+      }
+    ]
+  }
+}

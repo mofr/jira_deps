@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.1.RELEASE</version>
+    </parent>
+
+    <groupId>mofr</groupId>
+    <artifactId>jira_deps</artifactId>
+    <version>1.0</version>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <atlassian-connect-spring-boot.version>2.1.0</atlassian-connect-spring-boot.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.connect</groupId>
+            <artifactId>atlassian-connect-spring-boot-starter</artifactId>
+            <version>${atlassian-connect-spring-boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.connect</groupId>
+            <artifactId>atlassian-connect-spring-boot-jpa-starter</artifactId>
+            <version>${atlassian-connect-spring-boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <defaultGoal>spring-boot:run</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>display-spring-boot-dependency-updates</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>display-parent-updates</goal>
+                            <goal>display-property-updates</goal>
+                        </goals>
+                        <configuration>
+                            <includeProperties>atlassian-connect-spring-boot.version</includeProperties>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <!-- inspiration from https://medium.com/@l1ambda/webpack-a-spring-boot-app-with-instant-page-refresh-5d051a09d26f -->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <executable>npm</executable>
+                    <arguments>
+                        <argument>run</argument>
+                        <argument>build</argument>
+                    </arguments>
+                    <workingDirectory>.</workingDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <spring.profiles.active>dev</spring.profiles.active>
+            </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>org.hsqldb</groupId>
+                    <artifactId>hsqldb</artifactId>
+                    <scope>runtime</scope>
+                </dependency>
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-devtools</artifactId>
+                    <optional>true</optional>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+</project>

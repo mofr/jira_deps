@@ -1,0 +1,23 @@
+{
+  "maxResults": 1,
+  "startAt": 0,
+  "total": 1,
+  "isLast": true,
+  "values": [
+    {
+      "id": 2,
+      "self": "https://mofr-hello-world.atlassian.net/rest/agile/1.0/board/2",
+      "name": "Test Scrum board",
+      "type": "scrum",
+      "location": {
+        "projectId": 10000,
+        "displayName": "Jira Calendar (JC)",
+        "projectName": "Jira Calendar",
+        "projectKey": "JC",
+        "projectTypeKey": "software",
+        "avatarURI": "/secure/projectavatar?size=small&s=small&pid=10000&avatarId=10407",
+        "name": "Jira Calendar (JC)"
+      }
+    }
+  ]
+}
