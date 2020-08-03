@@ -1,8 +1,8 @@
 import React from 'react';
-import IssueCard from "../src/main/resources/javascript/IssueCard";
-import Column from "../src/main/resources/javascript/Column";
-import ColumnItem from "../src/main/resources/javascript/ColumnItem";
-import ColumnGroup from "../src/main/resources/javascript/ColumnGroup";
+import IssueCard from "../IssueCard";
+import Column from "../Column";
+import ColumnItem from "../ColumnItem";
+import ColumnGroup from "../ColumnGroup";
 
 export default {
   title: 'Column Group',

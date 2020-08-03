@@ -1,5 +1,5 @@
 module.exports = {
-    context: __dirname + '/src/main/resources/javascript',
+    context: __dirname + '/src/main/javascript',
     entry: './main.js',
     output: {
         path: __dirname + '/target/classes/static',

@@ -1,5 +1,5 @@
 import React from 'react';
-import IssueCard from "../src/main/resources/javascript/IssueCard";
+import IssueCard from "../IssueCard";
 
 export default {
   title: 'Issue Card',

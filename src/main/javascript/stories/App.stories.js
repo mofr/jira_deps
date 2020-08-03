@@ -1,5 +1,5 @@
 import React from 'react';
-import App from "../src/main/resources/javascript/App";
+import App from "../App";
 
 export default {
   title: 'App',
