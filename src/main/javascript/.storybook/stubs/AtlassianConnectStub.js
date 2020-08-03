@@ -7,7 +7,7 @@ new Server({
     routes() {
         this.get("/rest/agile/1.0/board", () => boards);
         this.get("/rest/agile/1.0/board/2/configuration", () => boardConfig);
-        this.get("/rest/api/3/search", () => issues);
+        this.get("/rest/api/3/search", () => issues, {timing: 1500});
     },
 });
 

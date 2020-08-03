@@ -20,6 +20,7 @@
     "@atlaskit/css-reset": "1.0.1",
     "@atlaskit/icon": "^21.0.1",
     "@atlaskit/reduced-ui-pack": "2.5.1",
+    "@atlaskit/spinner": "^15.0.0",
     "@atlaskit/status": "^0.10.1",
     "@atlaskit/theme": "^10.0.1",
     "@atlaskit/tooltip": "^16.0.1",

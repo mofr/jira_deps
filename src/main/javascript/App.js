@@ -3,36 +3,43 @@ import IssueCard from "./IssueCard";
 import ColumnGroup from "./ColumnGroup";
 import Column from "./Column";
 import ColumnItem from "./ColumnItem";
+import Centered from "./Centered";
+import Spinner from '@atlaskit/spinner';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            loading: false,
             issues: [],
         };
     }
 
     render() {
-        const items = [];
-        for (const issue of this.state.issues) {
-            items.push(<ColumnItem><IssueCard
-                id={issue.key}
-                link={issue.link}
-                title={issue.title}
-                status={issue.status}
-                type={issue.type}
-                assignee={issue.assignee}
-                storyPoints={issue.storyPoints}
-            /></ColumnItem>)
+        if (this.state.loading) {
+            return <Centered><Spinner size='xlarge'/></Centered>
         }
-        return <ColumnGroup>
-            <Column>
-                {items}
-            </Column>
-        </ColumnGroup>;
+        return <Centered>
+            <ColumnGroup>
+                <Column>
+                    {this.state.issues.map((issue, index) =>
+                        <ColumnItem><IssueCard
+                            id={issue.key}
+                            link={issue.link}
+                            title={issue.title}
+                            status={issue.status}
+                            type={issue.type}
+                            assignee={issue.assignee}
+                            storyPoints={issue.storyPoints}
+                        /></ColumnItem>
+                    )}
+                </Column>
+            </ColumnGroup>
+        </Centered>;
     }
 
     async componentDidMount() {
+        this.setState({...this.state, loading: true});
         const boardListResponse = await AP.request('/rest/agile/1.0/board?type=scrum&maxResults=1');
         const boardList = JSON.parse(boardListResponse.body);
         const boardId = boardList.values[0].id;
@@ -61,7 +68,7 @@ class App extends React.Component {
                 storyPoints: storyPoints,
             })
         }
-        this.setState({issues: issues});
+        this.setState({issues: issues, loading: false});
 
         // AP.jira.initJQLEditor();
         // var options = {
