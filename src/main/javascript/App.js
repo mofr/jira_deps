@@ -24,7 +24,7 @@ class App extends React.Component {
             <ColumnGroup>
                 <Column>
                     {this.state.issues.map(issue =>
-                        <ColumnItem><IssueCard
+                        <ColumnItem key={issue.key}><IssueCard
                             id={issue.key}
                             link={issue.link}
                             title={issue.title}
@@ -34,7 +34,7 @@ class App extends React.Component {
                             storyPoints={issue.storyPoints}
                         /></ColumnItem>
                     )}
-                    {this.state.issueLinks.map(link => <ColumnItem>
+                    {this.state.issueLinks.map(link => <ColumnItem key={link.id}>
                         {`${link.outward} ${link.type.inward} ${link.inward}`}
                     </ColumnItem>)}
                 </Column>
@@ -74,6 +74,7 @@ class App extends React.Component {
             for(const link of issue.fields.issuelinks) {
                 if (link.outwardIssue) {
                     issueLinks[link.id] = {
+                        id: link.id,
                         type: link.type,
                         inward: issue.key,
                         outward: link.outwardIssue.key,
@@ -81,6 +82,7 @@ class App extends React.Component {
                 }
                 else if (link.inwardIssue) {
                     issueLinks[link.id] = {
+                        id: link.id,
                         type: link.type,
                         inward: link.inwardIssue.key,
                         outward: issue.key,
