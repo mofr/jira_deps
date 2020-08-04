@@ -2,7 +2,6 @@ import React from 'react';
 import IssueCard from "./IssueCard";
 import ColumnGroup from "./ColumnGroup";
 import Column from "./Column";
-import ColumnItem from "./ColumnItem";
 import Centered from "./Centered";
 import Spinner from '@atlaskit/spinner';
 import toposort from 'toposort';
@@ -22,23 +21,21 @@ class App extends React.Component {
             return <Centered><Spinner size='xlarge'/></Centered>
         }
         const issueByKey = new Map(this.state.issues.map(issue => [issue.key, issue]));
-        console.log(issueByKey);
         const nodes = this.state.issues.map(issue => issue.key);
         const edges = this.state.issueLinks.map(link => [link.inward, link.outward]);
         const sortedIssueKeys = toposort.array(nodes, edges);
-        console.log(sortedIssueKeys);
         const layers = [];
         for(const issueKey of sortedIssueKeys) {
             layers.push([issueByKey.get(issueKey)]);
         }
-        console.log(layers);
 
         return <Centered>
             <ColumnGroup>
                 {layers.map(layer =>
                     <Column>
                         {layer.map(issue =>
-                            <ColumnItem key={issue.key}><IssueCard
+                            <IssueCard
+                                key={issue.key}
                                 id={issue.key}
                                 link={issue.link}
                                 title={issue.title}
@@ -46,7 +43,7 @@ class App extends React.Component {
                                 type={issue.type}
                                 assignee={issue.assignee}
                                 storyPoints={issue.storyPoints}
-                            /></ColumnItem>
+                            />
                         )}
                     </Column>
                 )}

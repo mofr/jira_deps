@@ -1,7 +1,6 @@
 import React from 'react';
 import IssueCard from "../IssueCard";
 import Column from "../Column";
-import ColumnItem from "../ColumnItem";
 import ColumnGroup from "../ColumnGroup";
 
 export default {
@@ -27,13 +26,13 @@ const Issue2 = () => (
 
 export const MultipleColumns = () => (<ColumnGroup>
     <Column>
-        <ColumnItem><Issue1/></ColumnItem>
-        <ColumnItem><Issue1/></ColumnItem>
-        <ColumnItem><Issue2/></ColumnItem>
-        <ColumnItem><Issue1/></ColumnItem>
+        <Issue1/>
+        <Issue1/>
+        <Issue2/>
+        <Issue1/>
     </Column>
     <Column>
-        <ColumnItem><Issue1/></ColumnItem>
-        <ColumnItem><Issue2/></ColumnItem>
+        <Issue1/>
+        <Issue2/>
     </Column>
 </ColumnGroup>);

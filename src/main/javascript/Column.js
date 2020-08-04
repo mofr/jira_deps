@@ -1,5 +1,6 @@
 import React from 'react';
 import {N20} from "@atlaskit/theme/colors";
+import ColumnItem from "./ColumnItem";
 
 export default function Column(props) {
     return <div style={{
@@ -7,6 +8,6 @@ export default function Column(props) {
         borderRadius: '4px',
         margin: '6px',
     }}>
-        {props.children}
+        {props.children.map(child => <ColumnItem key={child.key}>{child}</ColumnItem>)}
     </div>
 }
