@@ -12,6 +12,7 @@ class App extends React.Component {
         this.state = {
             loading: false,
             issues: [],
+            issueLinks: [],
         };
     }
 
@@ -22,7 +23,7 @@ class App extends React.Component {
         return <Centered>
             <ColumnGroup>
                 <Column>
-                    {this.state.issues.map((issue, index) =>
+                    {this.state.issues.map(issue =>
                         <ColumnItem><IssueCard
                             id={issue.key}
                             link={issue.link}
@@ -33,6 +34,9 @@ class App extends React.Component {
                             storyPoints={issue.storyPoints}
                         /></ColumnItem>
                     )}
+                    {this.state.issueLinks.map(link => <ColumnItem>
+                        {`${link.outward} ${link.type.inward} ${link.inward}`}
+                    </ColumnItem>)}
                 </Column>
             </ColumnGroup>
         </Centered>;
@@ -51,8 +55,8 @@ class App extends React.Component {
         const issuesResponse = await AP.request('/rest/api/3/search');
         const issuesResponseBody = JSON.parse(issuesResponse.body);
         const issues = [];
-        for(var i = 0; i < issuesResponseBody.issues.length; i++) {
-            const issue = issuesResponseBody.issues[i];
+        const issueLinks = {};
+        for(const issue of issuesResponseBody.issues) {
             const issuetype = issue.fields.issuetype;
             const statusCategory = issue.fields.status.statusCategory;
             const assignee = issue.fields.assignee;
@@ -66,9 +70,25 @@ class App extends React.Component {
                 type: {name: issuetype.name, iconUrl: issuetype.iconUrl},
                 assignee: (issue.fields.assignee && {name: assignee.displayName, avatarUrl: assignee.avatarUrls['48x48']}),
                 storyPoints: storyPoints,
-            })
+            });
+            for(const link of issue.fields.issuelinks) {
+                if (link.outwardIssue) {
+                    issueLinks[link.id] = {
+                        type: link.type,
+                        inward: issue.key,
+                        outward: link.outwardIssue.key,
+                    };
+                }
+                else if (link.inwardIssue) {
+                    issueLinks[link.id] = {
+                        type: link.type,
+                        inward: link.inwardIssue.key,
+                        outward: issue.key,
+                    };
+                }
+            }
         }
-        this.setState({issues: issues, loading: false});
+        this.setState({issues: issues, issueLinks: Object.values(issueLinks), loading: false});
 
         // AP.jira.initJQLEditor();
         // var options = {
