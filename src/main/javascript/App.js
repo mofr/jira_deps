@@ -4,7 +4,7 @@ import ColumnGroup from "./ColumnGroup";
 import Column from "./Column";
 import Centered from "./Centered";
 import Spinner from '@atlaskit/spinner';
-import toposort from 'toposort';
+import toposort from './topo';
 
 class App extends React.Component {
     constructor(props) {
@@ -18,16 +18,10 @@ class App extends React.Component {
 
     render() {
         if (this.state.loading) {
-            return <Centered><Spinner size='xlarge'/></Centered>
+            return <Centered><Spinner size='large'/></Centered>
         }
-        const issueByKey = new Map(this.state.issues.map(issue => [issue.key, issue]));
-        const nodes = this.state.issues.map(issue => issue.key);
-        const edges = this.state.issueLinks.map(link => [link.inward, link.outward]);
-        const sortedIssueKeys = toposort.array(nodes, edges);
-        const layers = [];
-        for(const issueKey of sortedIssueKeys) {
-            layers.push([issueByKey.get(issueKey)]);
-        }
+
+        const layers = this.sortIssues();
 
         return <Centered>
             <ColumnGroup>
@@ -49,6 +43,16 @@ class App extends React.Component {
                 )}
             </ColumnGroup>
         </Centered>;
+    }
+
+    sortIssues() {
+        const graph = new Map();
+        this.state.issues.map(issue => graph.set(issue.key, []));
+        this.state.issueLinks.map(link => graph.set(link.outward, []));
+        this.state.issueLinks.map(link => graph.get(link.outward).push(link.inward));
+        const layers = toposort(Array.from(graph));
+        const issueByKey = new Map(this.state.issues.map(issue => [issue.key, issue]));
+        return layers.map(layer => layer.map(issueKey => issueByKey.get(issueKey)));
     }
 
     async componentDidMount() {
