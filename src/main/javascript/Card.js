@@ -1,5 +1,5 @@
 import * as React from "react";
-import {N0, N800} from "@atlaskit/theme/colors";
+import {N0, N10, N800} from "@atlaskit/theme/colors";
 import styled from 'styled-components';
 
 const Card = styled.div`
@@ -9,6 +9,10 @@ const Card = styled.div`
     border-radius: 3px;
     max-width: 320px;
     padding: 12px 10px;
+    
+    &:hover {
+        background-color: ${N10};
+    }
 `;
 
 export default Card;
