@@ -1,0 +1,2474 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 50,
+  "total": 5,
+  "issues": [
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10711.properties,renderedFields",
+      "id": "44769",
+      "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44769",
+      "key": "SUSHI-1970",
+      "fields": {
+        "statuscategorychangedate": "2020-07-10T10:16:08.303-0700",
+        "issuetype": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+          "id": "10200",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/project/10406",
+          "id": "10406",
+          "key": "SUSHI",
+          "name": "SupplyShift Development ",
+          "projectTypeKey": "software",
+          "simplified": false,
+          "avatarUrls": {
+            "48x48": "https://supplyshift.atlassian.net/secure/projectavatar?pid=10406&avatarId=11674",
+            "24x24": "https://supplyshift.atlassian.net/secure/projectavatar?size=small&s=small&pid=10406&avatarId=11674",
+            "16x16": "https://supplyshift.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10406&avatarId=11674",
+            "32x32": "https://supplyshift.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10406&avatarId=11674"
+          },
+          "projectCategory": {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/projectCategory/10000",
+            "id": "10000",
+            "description": "All Boards that work on the SUSHI Product",
+            "name": "SUSHI Product"
+          }
+        },
+        "fixVersions": [
+          {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/version/11787",
+            "id": "11787",
+            "description": "Milestone 2: TSC post-launch release including Notifications, Retailer Scorecard",
+            "name": "Joshua 3.1",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2020-09-06"
+          }
+        ],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "customfield_10500": null,
+        "customfield_10742": null,
+        "customfield_10743": null,
+        "customfield_10744": null,
+        "customfield_10700": null,
+        "customfield_10701": null,
+        "customfield_10702": [],
+        "customfield_10703": null,
+        "customfield_10704": null,
+        "resolutiondate": null,
+        "workratio": -1,
+        "customfield_10707": null,
+        "customfield_10709": null,
+        "lastViewed": null,
+        "watches": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issue/SUSHI-1970/watchers",
+          "watchCount": 1,
+          "isWatching": false
+        },
+        "created": "2020-07-10T10:16:08.054-0700",
+        "priority": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "customfield_10300": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "The Parent Link is only available to Jira Premium users."
+          }
+        },
+        "customfield_10740": null,
+        "labels": [
+          "Backend"
+        ],
+        "customfield_10741": null,
+        "customfield_10733": null,
+        "customfield_10734": null,
+        "aggregatetimeoriginalestimate": null,
+        "timeestimate": null,
+        "customfield_10735": {
+          "version": 1,
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "As a"
+                },
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "type": "text",
+                  "text": "I want to"
+                },
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "type": "text",
+                  "text": "So that I"
+                }
+              ]
+            }
+          ]
+        },
+        "customfield_10736": null,
+        "customfield_10737": null,
+        "customfield_10738": null,
+        "customfield_10739": null,
+        "issuelinks": [
+          {
+            "id": "41392",
+            "self": "https://supplyshift.atlassian.net/rest/api/3/issueLink/41392",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issueLinkType/10000"
+            },
+            "outwardIssue": {
+              "id": "44449",
+              "key": "SUSHI-1649",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44449",
+              "fields": {
+                "summary": "Notifications: Assessment Request type notification",
+                "status": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/status/10531",
+                  "description": "When work meets the definition of ready and is moved to the dev board",
+                  "iconUrl": "https://supplyshift.atlassian.net/images/icons/statuses/generic.png",
+                  "name": "Ready For Dev",
+                  "id": "10531",
+                  "statusCategory": {
+                    "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+                  "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10001",
+                  "id": "10001",
+                  "description": "A user story. Created by JIRA Software - do not edit or delete.",
+                  "iconUrl": "https://supplyshift.atlassian.net/images/icons/issuetypes/story.svg",
+                  "name": "Story",
+                  "subtask": false
+                }
+              }
+            }
+          },
+          {
+            "id": "41391",
+            "self": "https://supplyshift.atlassian.net/rest/api/3/issueLink/41391",
+            "type": {
+              "id": "10003",
+              "name": "Relates",
+              "inward": "relates to",
+              "outward": "relates to",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issueLinkType/10003"
+            },
+            "inwardIssue": {
+              "id": "44624",
+              "key": "SUSHI-1825",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44624",
+              "fields": {
+                "summary": "Extract notifications library",
+                "status": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+                  "description": "",
+                  "iconUrl": "https://supplyshift.atlassian.net/",
+                  "name": "Opened",
+                  "id": "10000",
+                  "statusCategory": {
+                    "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+                  "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+                  "id": "10200",
+                  "description": "A task that needs to be done.",
+                  "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+                  "name": "Task",
+                  "subtask": false,
+                  "avatarId": 10318
+                }
+              }
+            }
+          }
+        ],
+        "assignee": null,
+        "updated": "2020-08-05T12:40:14.653-0700",
+        "status": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+          "description": "",
+          "iconUrl": "https://supplyshift.atlassian.net/",
+          "name": "Opened",
+          "id": "10000",
+          "statusCategory": {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "components": [
+          {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/component/10027",
+            "id": "10027",
+            "name": "Notifications",
+            "description": "Notifications within system and external to the system via email or other methods"
+          }
+        ],
+        "timeoriginalestimate": null,
+        "description": {
+          "version": 1,
+          "type": "doc",
+          "content": [
+            {
+              "type": "mediaSingle",
+              "attrs": {
+                "layout": "center"
+              },
+              "content": [
+                {
+                  "type": "media",
+                  "attrs": {
+                    "id": "8f9b6b65-8626-4b90-af2d-eebd7e1985f8",
+                    "type": "file",
+                    "collection": "jira-44769-field-description",
+                    "width": 600,
+                    "height": 420
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Store incoming instruction"
+                }
+              ]
+            }
+          ]
+        },
+        "customfield_10012": "0|hzzyeh:drahzzrd010wf",
+        "customfield_10005": 2,
+        "customfield_10600": null,
+        "customfield_10007": null,
+        "security": null,
+        "customfield_10723": null,
+        "customfield_10009": "SUSHI-1414",
+        "customfield_10724": null,
+        "aggregatetimeestimate": null,
+        "customfield_10726": null,
+        "customfield_10727": null,
+        "customfield_10728": null,
+        "customfield_10729": null,
+        "summary": "Add entity Instruction",
+        "creator": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3Ad43bac54-7362-412a-9b45-ed830779e8e7",
+          "accountId": "557058:d43bac54-7362-412a-9b45-ed830779e8e7",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/32"
+          },
+          "displayName": "Maxim Luzin",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3Ad43bac54-7362-412a-9b45-ed830779e8e7",
+          "accountId": "557058:d43bac54-7362-412a-9b45-ed830779e8e7",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/32"
+          },
+          "displayName": "Maxim Luzin",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "customfield_10000": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10001": null,
+        "customfield_10200": null,
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "customfield_10400": "{}",
+        "customfield_10710": null,
+        "environment": null,
+        "customfield_10711": null,
+        "customfield_10712": null,
+        "customfield_10713": null,
+        "customfield_10714": null,
+        "duedate": null,
+        "customfield_10715": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issue/SUSHI-1970/votes",
+          "votes": 0,
+          "hasVoted": false
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10711.properties,renderedFields",
+      "id": "44735",
+      "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44735",
+      "key": "SUSHI-1936",
+      "fields": {
+        "statuscategorychangedate": "2020-07-08T13:21:52.028-0700",
+        "issuetype": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+          "id": "10200",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/project/10406",
+          "id": "10406",
+          "key": "SUSHI",
+          "name": "SupplyShift Development ",
+          "projectTypeKey": "software",
+          "simplified": false,
+          "avatarUrls": {
+            "48x48": "https://supplyshift.atlassian.net/secure/projectavatar?pid=10406&avatarId=11674",
+            "24x24": "https://supplyshift.atlassian.net/secure/projectavatar?size=small&s=small&pid=10406&avatarId=11674",
+            "16x16": "https://supplyshift.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10406&avatarId=11674",
+            "32x32": "https://supplyshift.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10406&avatarId=11674"
+          },
+          "projectCategory": {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/projectCategory/10000",
+            "id": "10000",
+            "description": "All Boards that work on the SUSHI Product",
+            "name": "SUSHI Product"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "customfield_10742": null,
+        "customfield_10500": null,
+        "customfield_10743": null,
+        "customfield_10700": null,
+        "customfield_10744": null,
+        "customfield_10701": null,
+        "customfield_10702": [],
+        "customfield_10703": null,
+        "customfield_10704": null,
+        "resolutiondate": null,
+        "customfield_10707": null,
+        "workratio": -1,
+        "customfield_10709": null,
+        "watches": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issue/SUSHI-1936/watchers",
+          "watchCount": 1,
+          "isWatching": false
+        },
+        "lastViewed": null,
+        "created": "2020-07-08T13:21:51.823-0700",
+        "priority": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "customfield_10740": null,
+        "customfield_10300": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "The Parent Link is only available to Jira Premium users."
+          }
+        },
+        "labels": [
+          "Backend"
+        ],
+        "customfield_10741": null,
+        "customfield_10733": null,
+        "customfield_10734": null,
+        "timeestimate": null,
+        "customfield_10735": {
+          "version": 1,
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "As a"
+                },
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "type": "text",
+                  "text": "I want to"
+                },
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "type": "text",
+                  "text": "So that I"
+                }
+              ]
+            }
+          ]
+        },
+        "aggregatetimeoriginalestimate": null,
+        "customfield_10736": null,
+        "customfield_10737": null,
+        "customfield_10738": null,
+        "customfield_10739": null,
+        "issuelinks": [
+          {
+            "id": "41345",
+            "self": "https://supplyshift.atlassian.net/rest/api/3/issueLink/41345",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issueLinkType/10000"
+            },
+            "outwardIssue": {
+              "id": "44624",
+              "key": "SUSHI-1825",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44624",
+              "fields": {
+                "summary": "Extract notifications library",
+                "status": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+                  "description": "",
+                  "iconUrl": "https://supplyshift.atlassian.net/",
+                  "name": "Opened",
+                  "id": "10000",
+                  "statusCategory": {
+                    "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+                  "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+                  "id": "10200",
+                  "description": "A task that needs to be done.",
+                  "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+                  "name": "Task",
+                  "subtask": false,
+                  "avatarId": 10318
+                }
+              }
+            }
+          }
+        ],
+        "assignee": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3Ad43bac54-7362-412a-9b45-ed830779e8e7",
+          "accountId": "557058:d43bac54-7362-412a-9b45-ed830779e8e7",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/32"
+          },
+          "displayName": "Maxim Luzin",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "updated": "2020-08-05T12:35:50.411-0700",
+        "status": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+          "description": "",
+          "iconUrl": "https://supplyshift.atlassian.net/",
+          "name": "Opened",
+          "id": "10000",
+          "statusCategory": {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": {
+          "version": 1,
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "We should extract the subscription from existing instruction:"
+                }
+              ]
+            },
+            {
+              "type": "mediaSingle",
+              "attrs": {
+                "layout": "center"
+              },
+              "content": [
+                {
+                  "type": "media",
+                  "attrs": {
+                    "id": "9a4cd444-834e-4c6f-9ca1-8e9d406ec66e",
+                    "type": "file",
+                    "collection": "jira-44735-field-description",
+                    "width": 555,
+                    "height": 731
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": []
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Steps:"
+                }
+              ]
+            },
+            {
+              "type": "orderedList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Rename table "
+                        },
+                        {
+                          "type": "text",
+                          "text": "supplyshift_subscription",
+                          "marks": [
+                            {
+                              "type": "code"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": " to "
+                        },
+                        {
+                          "type": "text",
+                          "text": "notification_subscriber",
+                          "marks": [
+                            {
+                              "type": "code"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Rename  entity Subscription to AccountSubscription and table.  "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Rename field enabled to email_enabled. "
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Add subscriber_id. Fill  subscriber_id  from "
+                        },
+                        {
+                          "type": "text",
+                          "text": "Subscriber.Id",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "http://Subscriber.Id"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": ".  account_id should be match between Subscriber and AccountSubscriber"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Drop column  AccountSubscription.account_id"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Add Entity Subscription"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Migrate data from  coded  to database. From NotificationInstruction  to Subscription"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "orderedList",
+                      "content": [
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "instruction_type",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " → "
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "id",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "SubscriptionInfo.label",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " → "
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "label",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "SubscriptionInfo.help_text",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " → "
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "help_text",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "SubscriptionInfo.subscription_type",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " → "
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "type",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "SubscriptionInfo.",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " → "
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "type",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Instruction.recipient_roles",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " → "
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "recipient_accounts_roles",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Instruction.recipient_company_roles",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " → "
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "recipient_company_roles",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "listItem",
+                          "content": [
+                            {
+                              "type": "paragraph",
+                              "content": [
+                                {
+                                  "type": "text",
+                                  "text": "Instruction.send_immediately ",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " → "
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "email_digest_supported",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "text": " = NOT "
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "send_immediately",
+                                  "marks": [
+                                    {
+                                      "type": "code"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Fix api for  subscriptions"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Check that all account  have Subscriber"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "customfield_10012": "0|hzzyeh:drahzzrd010wv",
+        "customfield_10005": 5,
+        "customfield_10600": null,
+        "customfield_10007": [
+          "com.atlassian.greenhopper.service.sprint.Sprint@7eafd72b[completeDate=2020-07-27T04:25:24.664Z,endDate=2020-07-27T09:13:00.000Z,goal=,id=316,name=2020.Q3.101,rapidViewId=21,sequence=316,startDate=2020-07-13T09:13:39.280Z,state=CLOSED]",
+          "com.atlassian.greenhopper.service.sprint.Sprint@669077a3[completeDate=<null>,endDate=<null>,goal=<null>,id=319,name=2020.Q3.103,rapidViewId=21,sequence=319,startDate=<null>,state=FUTURE]"
+        ],
+        "security": null,
+        "customfield_10723": null,
+        "customfield_10009": "SUSHI-1414",
+        "customfield_10724": null,
+        "aggregatetimeestimate": null,
+        "customfield_10726": null,
+        "customfield_10727": null,
+        "customfield_10728": null,
+        "customfield_10729": null,
+        "summary": "Extract subscription from instruction",
+        "creator": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3Ad43bac54-7362-412a-9b45-ed830779e8e7",
+          "accountId": "557058:d43bac54-7362-412a-9b45-ed830779e8e7",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/32"
+          },
+          "displayName": "Maxim Luzin",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3Ad43bac54-7362-412a-9b45-ed830779e8e7",
+          "accountId": "557058:d43bac54-7362-412a-9b45-ed830779e8e7",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:d43bac54-7362-412a-9b45-ed830779e8e7/f6874c13-2cc7-49df-9969-7b808cdc56e3/32"
+          },
+          "displayName": "Maxim Luzin",
+          "active": true,
+          "timeZone": "America/Los_Angeles",
+          "accountType": "atlassian"
+        },
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10000": null,
+        "customfield_10001": null,
+        "customfield_10200": null,
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "customfield_10400": "{}",
+        "customfield_10710": null,
+        "environment": null,
+        "customfield_10711": null,
+        "customfield_10712": null,
+        "customfield_10713": null,
+        "customfield_10714": null,
+        "customfield_10715": null,
+        "duedate": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issue/SUSHI-1936/votes",
+          "votes": 0,
+          "hasVoted": false
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10711.properties,renderedFields",
+      "id": "44624",
+      "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44624",
+      "key": "SUSHI-1825",
+      "fields": {
+        "statuscategorychangedate": "2020-06-25T04:18:37.629-0700",
+        "issuetype": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+          "id": "10200",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/project/10406",
+          "id": "10406",
+          "key": "SUSHI",
+          "name": "SupplyShift Development ",
+          "projectTypeKey": "software",
+          "simplified": false,
+          "avatarUrls": {
+            "48x48": "https://supplyshift.atlassian.net/secure/projectavatar?pid=10406&avatarId=11674",
+            "24x24": "https://supplyshift.atlassian.net/secure/projectavatar?size=small&s=small&pid=10406&avatarId=11674",
+            "16x16": "https://supplyshift.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10406&avatarId=11674",
+            "32x32": "https://supplyshift.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10406&avatarId=11674"
+          },
+          "projectCategory": {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/projectCategory/10000",
+            "id": "10000",
+            "description": "All Boards that work on the SUSHI Product",
+            "name": "SUSHI Product"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "customfield_10742": null,
+        "customfield_10500": null,
+        "customfield_10743": null,
+        "customfield_10700": null,
+        "customfield_10744": null,
+        "customfield_10701": null,
+        "customfield_10702": [],
+        "customfield_10703": null,
+        "customfield_10704": null,
+        "resolutiondate": null,
+        "customfield_10707": null,
+        "workratio": -1,
+        "customfield_10709": null,
+        "lastViewed": null,
+        "watches": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issue/SUSHI-1825/watchers",
+          "watchCount": 1,
+          "isWatching": true
+        },
+        "created": "2020-06-25T04:18:37.454-0700",
+        "priority": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "customfield_10300": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "The Parent Link is only available to Jira Premium users."
+          }
+        },
+        "customfield_10740": null,
+        "labels": [
+          "Backend"
+        ],
+        "customfield_10741": null,
+        "customfield_10733": null,
+        "customfield_10734": null,
+        "customfield_10735": {
+          "version": 1,
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "As a"
+                },
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "type": "text",
+                  "text": "I want to"
+                },
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "type": "text",
+                  "text": "So that I"
+                }
+              ]
+            }
+          ]
+        },
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "customfield_10736": null,
+        "customfield_10737": null,
+        "customfield_10738": null,
+        "customfield_10739": null,
+        "issuelinks": [
+          {
+            "id": "41388",
+            "self": "https://supplyshift.atlassian.net/rest/api/3/issueLink/41388",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issueLinkType/10000"
+            },
+            "outwardIssue": {
+              "id": "44736",
+              "key": "SUSHI-1937",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44736",
+              "fields": {
+                "summary": "Implement pipeline for in-platform notification",
+                "status": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+                  "description": "",
+                  "iconUrl": "https://supplyshift.atlassian.net/",
+                  "name": "Opened",
+                  "id": "10000",
+                  "statusCategory": {
+                    "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+                  "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+                  "id": "10200",
+                  "description": "A task that needs to be done.",
+                  "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+                  "name": "Task",
+                  "subtask": false,
+                  "avatarId": 10318
+                }
+              }
+            }
+          },
+          {
+            "id": "41100",
+            "self": "https://supplyshift.atlassian.net/rest/api/3/issueLink/41100",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issueLinkType/10000"
+            },
+            "inwardIssue": {
+              "id": "40192",
+              "key": "SUSHI-1659",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issue/40192",
+              "fields": {
+                "summary": "Make notification instructions serializable",
+                "status": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+                  "description": "",
+                  "iconUrl": "https://supplyshift.atlassian.net/",
+                  "name": "Opened",
+                  "id": "10000",
+                  "statusCategory": {
+                    "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+                  "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+                  "id": "10200",
+                  "description": "A task that needs to be done.",
+                  "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+                  "name": "Task",
+                  "subtask": false,
+                  "avatarId": 10318
+                }
+              }
+            }
+          },
+          {
+            "id": "41345",
+            "self": "https://supplyshift.atlassian.net/rest/api/3/issueLink/41345",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issueLinkType/10000"
+            },
+            "inwardIssue": {
+              "id": "44735",
+              "key": "SUSHI-1936",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44735",
+              "fields": {
+                "summary": "Extract subscription from instruction",
+                "status": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+                  "description": "",
+                  "iconUrl": "https://supplyshift.atlassian.net/",
+                  "name": "Opened",
+                  "id": "10000",
+                  "statusCategory": {
+                    "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+                  "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+                  "id": "10200",
+                  "description": "A task that needs to be done.",
+                  "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+                  "name": "Task",
+                  "subtask": false,
+                  "avatarId": 10318
+                }
+              }
+            }
+          },
+          {
+            "id": "41391",
+            "self": "https://supplyshift.atlassian.net/rest/api/3/issueLink/41391",
+            "type": {
+              "id": "10003",
+              "name": "Relates",
+              "inward": "relates to",
+              "outward": "relates to",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issueLinkType/10003"
+            },
+            "outwardIssue": {
+              "id": "44769",
+              "key": "SUSHI-1970",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44769",
+              "fields": {
+                "summary": "Add entity Instruction",
+                "status": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+                  "description": "",
+                  "iconUrl": "https://supplyshift.atlassian.net/",
+                  "name": "Opened",
+                  "id": "10000",
+                  "statusCategory": {
+                    "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+                  "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+                  "id": "10200",
+                  "description": "A task that needs to be done.",
+                  "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+                  "name": "Task",
+                  "subtask": false,
+                  "avatarId": 10318
+                }
+              }
+            }
+          }
+        ],
+        "assignee": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3A5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "accountId": "557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "emailAddress": "alexander.egorov@quantumsoft.ru",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/32"
+          },
+          "displayName": "Alexander Egorov",
+          "active": true,
+          "timeZone": "Asia/Novosibirsk",
+          "accountType": "atlassian"
+        },
+        "updated": "2020-08-05T12:34:37.400-0700",
+        "status": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+          "description": "",
+          "iconUrl": "https://supplyshift.atlassian.net/",
+          "name": "Opened",
+          "id": "10000",
+          "statusCategory": {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": {
+          "version": 1,
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "In order to give the possibility to microservices (analytics in particular) to publish notifications, we need to extract the client library from the monolith."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Here is a high-level diagram showing the target structure."
+                }
+              ]
+            },
+            {
+              "type": "mediaSingle",
+              "attrs": {
+                "layout": "center"
+              },
+              "content": [
+                {
+                  "type": "media",
+                  "attrs": {
+                    "id": "58365438-a6ce-410b-94c3-052f1df54d52",
+                    "type": "file",
+                    "collection": "jira-44624-field-description",
+                    "width": 1652,
+                    "height": 887
+                  }
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "To do"
+                }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Create "
+                        },
+                        {
+                          "type": "text",
+                          "text": "supplyshift_notifications",
+                          "marks": [
+                            {
+                              "type": "code"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "text": " GitHub repository"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Publish python package to Gemfury"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "All applications (especially analytics) should use the library to send notification instructions"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Analytics shouldn`t use the organization database to obtain recipients"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Out of scope"
+                }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Kafka pipeline"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "New types of notifications ("
+                        },
+                        {
+                          "type": "inlineCard",
+                          "attrs": {
+                            "url": "https://supplyshift.atlassian.net/browse/SUSHI-1604"
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "text": " )"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "customfield_10012": "0|hzzyeh:drahzzrd010wr",
+        "customfield_10005": 5,
+        "customfield_10600": null,
+        "customfield_10007": [
+          "com.atlassian.greenhopper.service.sprint.Sprint@669077a3[completeDate=<null>,endDate=<null>,goal=<null>,id=319,name=2020.Q3.103,rapidViewId=21,sequence=319,startDate=<null>,state=FUTURE]"
+        ],
+        "security": null,
+        "customfield_10723": null,
+        "customfield_10724": null,
+        "customfield_10009": "SUSHI-1414",
+        "aggregatetimeestimate": null,
+        "customfield_10726": null,
+        "customfield_10727": null,
+        "customfield_10728": null,
+        "customfield_10729": null,
+        "summary": "Extract notifications library",
+        "creator": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3A5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "accountId": "557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "emailAddress": "alexander.egorov@quantumsoft.ru",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/32"
+          },
+          "displayName": "Alexander Egorov",
+          "active": true,
+          "timeZone": "Asia/Novosibirsk",
+          "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3A5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "accountId": "557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "emailAddress": "alexander.egorov@quantumsoft.ru",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/32"
+          },
+          "displayName": "Alexander Egorov",
+          "active": true,
+          "timeZone": "Asia/Novosibirsk",
+          "accountType": "atlassian"
+        },
+        "customfield_10000": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10001": null,
+        "customfield_10200": null,
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "customfield_10400": "{}",
+        "customfield_10710": null,
+        "customfield_10711": null,
+        "environment": null,
+        "customfield_10712": null,
+        "customfield_10713": null,
+        "customfield_10714": null,
+        "duedate": null,
+        "customfield_10715": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issue/SUSHI-1825/votes",
+          "votes": 0,
+          "hasVoted": false
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10711.properties,renderedFields",
+      "id": "40192",
+      "self": "https://supplyshift.atlassian.net/rest/api/3/issue/40192",
+      "key": "SUSHI-1659",
+      "fields": {
+        "statuscategorychangedate": "2019-05-24T03:07:14.441-0700",
+        "issuetype": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+          "id": "10200",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+          "name": "Task",
+          "subtask": false,
+          "avatarId": 10318
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/project/10406",
+          "id": "10406",
+          "key": "SUSHI",
+          "name": "SupplyShift Development ",
+          "projectTypeKey": "software",
+          "simplified": false,
+          "avatarUrls": {
+            "48x48": "https://supplyshift.atlassian.net/secure/projectavatar?pid=10406&avatarId=11674",
+            "24x24": "https://supplyshift.atlassian.net/secure/projectavatar?size=small&s=small&pid=10406&avatarId=11674",
+            "16x16": "https://supplyshift.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10406&avatarId=11674",
+            "32x32": "https://supplyshift.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10406&avatarId=11674"
+          },
+          "projectCategory": {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/projectCategory/10000",
+            "id": "10000",
+            "description": "All Boards that work on the SUSHI Product",
+            "name": "SUSHI Product"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": null,
+        "customfield_10742": null,
+        "customfield_10500": null,
+        "customfield_10743": null,
+        "customfield_10700": null,
+        "customfield_10744": null,
+        "customfield_10701": null,
+        "customfield_10702": [],
+        "customfield_10703": null,
+        "customfield_10704": null,
+        "resolutiondate": null,
+        "customfield_10707": null,
+        "workratio": -1,
+        "customfield_10709": null,
+        "watches": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issue/SUSHI-1659/watchers",
+          "watchCount": 3,
+          "isWatching": true
+        },
+        "lastViewed": null,
+        "created": "2019-05-24T03:07:14.013-0700",
+        "priority": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "customfield_10300": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "The Parent Link is only available to Jira Premium users."
+          }
+        },
+        "customfield_10740": null,
+        "customfield_10741": null,
+        "labels": [
+          "Backend"
+        ],
+        "customfield_10733": null,
+        "customfield_10734": null,
+        "customfield_10735": null,
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "customfield_10736": null,
+        "customfield_10737": null,
+        "customfield_10738": null,
+        "customfield_10739": null,
+        "issuelinks": [
+          {
+            "id": "41100",
+            "self": "https://supplyshift.atlassian.net/rest/api/3/issueLink/41100",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issueLinkType/10000"
+            },
+            "outwardIssue": {
+              "id": "44624",
+              "key": "SUSHI-1825",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44624",
+              "fields": {
+                "summary": "Extract notifications library",
+                "status": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+                  "description": "",
+                  "iconUrl": "https://supplyshift.atlassian.net/",
+                  "name": "Opened",
+                  "id": "10000",
+                  "statusCategory": {
+                    "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+                  "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+                  "id": "10200",
+                  "description": "A task that needs to be done.",
+                  "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+                  "name": "Task",
+                  "subtask": false,
+                  "avatarId": 10318
+                }
+              }
+            }
+          },
+          {
+            "id": "41387",
+            "self": "https://supplyshift.atlassian.net/rest/api/3/issueLink/41387",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issueLinkType/10000"
+            },
+            "outwardIssue": {
+              "id": "44736",
+              "key": "SUSHI-1937",
+              "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44736",
+              "fields": {
+                "summary": "Implement pipeline for in-platform notification",
+                "status": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+                  "description": "",
+                  "iconUrl": "https://supplyshift.atlassian.net/",
+                  "name": "Opened",
+                  "id": "10000",
+                  "statusCategory": {
+                    "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "To Do"
+                  }
+                },
+                "priority": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+                  "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Medium",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10200",
+                  "id": "10200",
+                  "description": "A task that needs to be done.",
+                  "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype",
+                  "name": "Task",
+                  "subtask": false,
+                  "avatarId": 10318
+                }
+              }
+            }
+          }
+        ],
+        "assignee": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3A5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "accountId": "557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "emailAddress": "alexander.egorov@quantumsoft.ru",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/32"
+          },
+          "displayName": "Alexander Egorov",
+          "active": true,
+          "timeZone": "Asia/Novosibirsk",
+          "accountType": "atlassian"
+        },
+        "updated": "2020-08-05T12:34:34.767-0700",
+        "status": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/status/10000",
+          "description": "",
+          "iconUrl": "https://supplyshift.atlassian.net/",
+          "name": "Opened",
+          "id": "10000",
+          "statusCategory": {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": {
+          "version": 1,
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Notification instructions are "
+                },
+                {
+                  "type": "text",
+                  "text": "Instruction",
+                  "marks": [
+                    {
+                      "type": "code"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " class from "
+                },
+                {
+                  "type": "text",
+                  "text": "notifications",
+                  "marks": [
+                    {
+                      "type": "code"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " app and all its subclasses."
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 2
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Steps to do:"
+                }
+              ]
+            },
+            {
+              "type": "orderedList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Use only primitive members in instructions (replace models with ids)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Extract database queries from instructions"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Extract get_payload method from instructions (replace with a plain context dict)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Convert Instruction to dataclass"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "customfield_10012": "0|hzzyeh:drahzzrd010wi",
+        "customfield_10005": 5,
+        "customfield_10600": null,
+        "customfield_10007": [
+          "com.atlassian.greenhopper.service.sprint.Sprint@669077a3[completeDate=<null>,endDate=<null>,goal=<null>,id=319,name=2020.Q3.103,rapidViewId=21,sequence=319,startDate=<null>,state=FUTURE]"
+        ],
+        "security": null,
+        "customfield_10723": null,
+        "aggregatetimeestimate": null,
+        "customfield_10724": null,
+        "customfield_10009": "SUSHI-1414",
+        "customfield_10726": null,
+        "customfield_10727": null,
+        "customfield_10728": null,
+        "customfield_10729": null,
+        "summary": "Make notification instructions serializable",
+        "creator": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3A5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "accountId": "557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "emailAddress": "alexander.egorov@quantumsoft.ru",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/32"
+          },
+          "displayName": "Alexander Egorov",
+          "active": true,
+          "timeZone": "Asia/Novosibirsk",
+          "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3A5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "accountId": "557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "emailAddress": "alexander.egorov@quantumsoft.ru",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/32"
+          },
+          "displayName": "Alexander Egorov",
+          "active": true,
+          "timeZone": "Asia/Novosibirsk",
+          "accountType": "atlassian"
+        },
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10000": null,
+        "customfield_10001": null,
+        "customfield_10200": null,
+        "customfield_10003": null,
+        "customfield_10004": null,
+        "customfield_10400": "{}",
+        "customfield_10710": null,
+        "customfield_10711": null,
+        "environment": null,
+        "customfield_10712": null,
+        "customfield_10713": null,
+        "customfield_10714": null,
+        "customfield_10715": null,
+        "duedate": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issue/SUSHI-1659/votes",
+          "votes": 1,
+          "hasVoted": false
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,customfield_10711.properties,renderedFields",
+      "id": "44210",
+      "self": "https://supplyshift.atlassian.net/rest/api/3/issue/44210",
+      "key": "SUSHI-1415",
+      "fields": {
+        "statuscategorychangedate": "2020-06-25T04:59:09.893-0700",
+        "issuetype": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issuetype/10423",
+          "id": "10423",
+          "description": "This is an issue type that is only for investigative work. No code is committed from a spike",
+          "iconUrl": "https://supplyshift.atlassian.net/secure/viewavatar?size=medium&avatarId=10313&avatarType=issuetype",
+          "name": "Spike",
+          "subtask": false,
+          "avatarId": 10313
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/project/10406",
+          "id": "10406",
+          "key": "SUSHI",
+          "name": "SupplyShift Development ",
+          "projectTypeKey": "software",
+          "simplified": false,
+          "avatarUrls": {
+            "48x48": "https://supplyshift.atlassian.net/secure/projectavatar?pid=10406&avatarId=11674",
+            "24x24": "https://supplyshift.atlassian.net/secure/projectavatar?size=small&s=small&pid=10406&avatarId=11674",
+            "16x16": "https://supplyshift.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10406&avatarId=11674",
+            "32x32": "https://supplyshift.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10406&avatarId=11674"
+          },
+          "projectCategory": {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/projectCategory/10000",
+            "id": "10000",
+            "description": "All Boards that work on the SUSHI Product",
+            "name": "SUSHI Product"
+          }
+        },
+        "fixVersions": [],
+        "aggregatetimespent": null,
+        "resolution": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Work has been completed on this issue.",
+          "name": "Done"
+        },
+        "customfield_10742": null,
+        "customfield_10500": null,
+        "customfield_10743": null,
+        "customfield_10744": null,
+        "customfield_10700": null,
+        "customfield_10701": null,
+        "customfield_10702": [],
+        "customfield_10703": null,
+        "resolutiondate": "2020-06-25T04:59:09.878-0700",
+        "customfield_10704": null,
+        "workratio": -1,
+        "customfield_10707": null,
+        "customfield_10709": null,
+        "watches": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issue/SUSHI-1415/watchers",
+          "watchCount": 2,
+          "isWatching": true
+        },
+        "lastViewed": null,
+        "created": "2020-05-19T02:39:13.694-0700",
+        "priority": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://supplyshift.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        },
+        "customfield_10740": null,
+        "customfield_10300": {
+          "hasEpicLinkFieldDependency": false,
+          "showField": false,
+          "nonEditableReason": {
+            "reason": "PLUGIN_LICENSE_ERROR",
+            "message": "The Parent Link is only available to Jira Premium users."
+          }
+        },
+        "labels": [
+          "Backend"
+        ],
+        "customfield_10741": null,
+        "customfield_10733": null,
+        "customfield_10734": null,
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "customfield_10735": {
+          "version": 1,
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "As a"
+                },
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "type": "text",
+                  "text": "I want to"
+                },
+                {
+                  "type": "hardBreak"
+                },
+                {
+                  "type": "text",
+                  "text": "So that I"
+                }
+              ]
+            }
+          ]
+        },
+        "customfield_10736": null,
+        "customfield_10737": null,
+        "customfield_10738": null,
+        "customfield_10739": null,
+        "issuelinks": [],
+        "assignee": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3A5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "accountId": "557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "emailAddress": "alexander.egorov@quantumsoft.ru",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/32"
+          },
+          "displayName": "Alexander Egorov",
+          "active": true,
+          "timeZone": "Asia/Novosibirsk",
+          "accountType": "atlassian"
+        },
+        "updated": "2020-06-25T04:59:09.893-0700",
+        "status": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/status/6",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "https://supplyshift.atlassian.net/images/icons/statuses/closed.png",
+          "name": "Closed",
+          "id": "6",
+          "statusCategory": {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "components": [
+          {
+            "self": "https://supplyshift.atlassian.net/rest/api/3/component/10027",
+            "id": "10027",
+            "name": "Notifications",
+            "description": "Notifications within system and external to the system via email or other methods"
+          }
+        ],
+        "timeoriginalestimate": null,
+        "description": {
+          "version": 1,
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 1
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "To do"
+                }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Design network protocol (which could be just celery/rabbitmq or kafka)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Plan client library creation"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Analytics should use the new API to send notifications"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Keep in mind new notifications system "
+                        },
+                        {
+                          "type": "text",
+                          "text": "https://supplyshift.atlassian.net/wiki/spaces/PM/pages/1197604905/Notifications",
+                          "marks": [
+                            {
+                              "type": "link",
+                              "attrs": {
+                                "href": "https://supplyshift.atlassian.net/wiki/spaces/PM/pages/1197604905/Notifications"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Create tasks for all the above"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "customfield_10012": "0|hzzyf6:sa",
+        "customfield_10005": 3,
+        "customfield_10600": null,
+        "security": null,
+        "customfield_10007": [
+          "com.atlassian.greenhopper.service.sprint.Sprint@5e861263[completeDate=2020-06-26T12:56:14.343Z,endDate=2020-06-29T09:47:00.000Z,goal=,id=310,name=2020.Q2.99,rapidViewId=21,sequence=311,startDate=2020-06-15T09:47:39.556Z,state=CLOSED]",
+          "com.atlassian.greenhopper.service.sprint.Sprint@54358e5[completeDate=2020-06-15T09:46:10.543Z,endDate=2020-06-15T06:56:00.000Z,goal=,id=311,name=2020.Q2.98,rapidViewId=21,sequence=310,startDate=2020-06-01T06:56:44.670Z,state=CLOSED]"
+        ],
+        "customfield_10723": null,
+        "customfield_10724": null,
+        "customfield_10009": "SUSHI-1414",
+        "aggregatetimeestimate": null,
+        "customfield_10726": null,
+        "customfield_10727": null,
+        "customfield_10728": null,
+        "customfield_10729": null,
+        "summary": "Plan notifications and analytics segregation",
+        "creator": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3A5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "accountId": "557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "emailAddress": "alexander.egorov@quantumsoft.ru",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/32"
+          },
+          "displayName": "Alexander Egorov",
+          "active": true,
+          "timeZone": "Asia/Novosibirsk",
+          "accountType": "atlassian"
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/user?accountId=557058%3A5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "accountId": "557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb",
+          "emailAddress": "alexander.egorov@quantumsoft.ru",
+          "avatarUrls": {
+            "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/48",
+            "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/24",
+            "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/16",
+            "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:5b42565b-c1c3-4a2a-bbb1-5e948f6f10fb/ccde26f5-7c66-4b3f-aa1e-e427456b8b36/32"
+          },
+          "displayName": "Alexander Egorov",
+          "active": true,
+          "timeZone": "Asia/Novosibirsk",
+          "accountType": "atlassian"
+        },
+        "customfield_10000": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "customfield_10001": "3_*:*_2_*:*_1160839790_*|*_6_*:*_1_*:*_0_*|*_10000_*:*_2_*:*_2042452755_*|*_10400_*:*_1_*:*_1903665",
+        "customfield_10200": null,
+        "customfield_10003": null,
+        "customfield_10400": "{}",
+        "customfield_10004": null,
+        "customfield_10710": null,
+        "environment": null,
+        "customfield_10711": null,
+        "customfield_10712": null,
+        "customfield_10713": null,
+        "customfield_10714": null,
+        "customfield_10715": null,
+        "duedate": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://supplyshift.atlassian.net/rest/api/3/issue/SUSHI-1415/votes",
+          "votes": 0,
+          "hasVoted": false
+        }
+      }
+    }
+  ]
+}

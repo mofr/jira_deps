@@ -52,7 +52,7 @@ class App extends React.Component {
         this.state.issueLinks.map(link => graph.get(link.outward).push(link.inward));
         const layers = toposort(Array.from(graph));
         const issueByKey = new Map(this.state.issues.map(issue => [issue.key, issue]));
-        return layers.map(layer => layer.map(issueKey => issueByKey.get(issueKey)));
+        return layers.map(layer => layer.map(issueKey => issueByKey.get(issueKey) || {'key': issueKey, 'title': 'Issue outside of JQL'}));
     }
 
     async componentDidMount() {
@@ -65,7 +65,15 @@ class App extends React.Component {
         const boardConfiguration = JSON.parse(boardConfigurationResponse.body);
         const estimationField = boardConfiguration.estimation.field;
 
-        const issuesResponse = await AP.request('/rest/api/3/search');
+        const jql = this.props?.jql;
+        let querystring = '';
+        if (jql) {
+            querystring = `jql=${encodeURIComponent(jql)}`;
+        }
+        if (querystring) {
+            querystring = '?' + querystring;
+        }
+        const issuesResponse = await AP.request('/rest/api/3/search' + querystring);
         const issuesResponseBody = JSON.parse(issuesResponse.body);
         const issues = [];
         const issueLinks = {};
