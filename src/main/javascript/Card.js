@@ -7,7 +7,7 @@ const Card = styled.div`
     color: ${N800};
     box-shadow: 0px 1px 2px rgba(9, 30, 66, 0.25);
     border-radius: 3px;
-    max-width: 320px;
+    width: 320px;
     padding: 12px 10px;
     
     &:hover {
