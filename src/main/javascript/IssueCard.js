@@ -1,12 +1,24 @@
 import React from 'react';
-import { Status, Color } from '@atlaskit/status/element';
+import { Status } from '@atlaskit/status/element';
 import Card from "./Card";
 import Tooltip from '@atlaskit/tooltip';
 import Avatar from '@atlaskit/avatar';
 import Badge from '@atlaskit/badge';
+import styled from 'styled-components';
+
+const IssueLink = styled.a`
+  color: gray;
+  margin: 6px;
+  font-weight: 600;
+  white-space: nowrap;
+`;
+
+const TooltipTag = styled.div`
+    display: flex;
+`;
 
 function IssueCard(props) {
-    const typeElement = (props.type && <Tooltip content={props.type.name}>
+    const typeElement = (props.type && <Tooltip content={props.type.name} tag={TooltipTag}>
         <img src={props.type.iconUrl} alt={props.type.name}/>
     </Tooltip>);
     const statusElement = (props.status && <Status text={props.status.text} color={props.status.color} />);
@@ -17,7 +29,7 @@ function IssueCard(props) {
     return <Card>
         <div style={{display: 'flex', alignItems: 'center'}}>
             {typeElement}
-            <span style={{color: 'gray', margin: '6px', fontWeight: 600}}><a href={props.link}>{props.id}</a></span>
+            <IssueLink href={props.link}>{props.id}</IssueLink>
             <span>{props.title}</span>
         </div>
 

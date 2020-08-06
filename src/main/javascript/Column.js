@@ -1,6 +1,11 @@
 import React from 'react';
 import {N20} from "@atlaskit/theme/colors";
-import ColumnItem from "./ColumnItem";
+import styled from 'styled-components';
+
+const ColumnItem = styled.div`
+    margin: 6px;
+`;
+
 
 export default function Column(props) {
     return <div style={{
