@@ -52,7 +52,7 @@ class App extends React.Component {
         this.state.issueLinks.map(link => graph.get(link.outward).push(link.inward));
         const layers = toposort(Array.from(graph));
         const issueByKey = new Map(this.state.issues.map(issue => [issue.key, issue]));
-        return layers.map(layer => layer.map(issueKey => issueByKey.get(issueKey) || {'key': issueKey, 'title': 'Issue outside of JQL'}));
+        return layers.map(layer => [...layer].map(issueKey => issueByKey.get(issueKey) || {'key': issueKey, 'title': 'Issue outside of JQL'}));
     }
 
     async componentDidMount() {
