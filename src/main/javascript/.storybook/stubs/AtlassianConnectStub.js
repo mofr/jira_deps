@@ -1,15 +1,15 @@
 import { Server } from "miragejs"
 import boards from "./boards.json"
 import boardConfig from "./boardConfig.json"
-import issues_jc from "./issues_jc.json"
-import issues_empty from "./issues_empty.json"
-import issues_sushi_page1 from "./issues_sushi_page1.json"
-import issues_sushi_epic1 from "./issues_sushi_epic1.json"
+import issuesTest1 from "./issuesTest1.json"
+import issuesEmpty from "./issuesEmpty.json"
+import issuesSushiPage1 from "./issuesSushiPage1.json"
+import issuesSushiEpic1 from "./issuesSushiEpic1.json"
 
 const issues = {
-    'project=JC': issues_jc,
-    'project=SUSHI': issues_sushi_page1,
-    'project=SUSHI AND "Epic Link"=SUSHI-1414': issues_sushi_epic1,
+    'project=JC': issuesTest1,
+    'project=SUSHI': issuesSushiPage1,
+    'project=SUSHI AND "Epic Link"=SUSHI-1414': issuesSushiEpic1,
 };
 
 new Server({
@@ -18,7 +18,7 @@ new Server({
         this.get("/rest/agile/1.0/board/2/configuration", () => boardConfig);
         this.get("/rest/api/3/search", (schema, request) => {
             const jql = request.queryParams.jql;
-            return issues[jql] || issues_empty;
+            return issues[jql] || issuesEmpty;
         });
     },
 });

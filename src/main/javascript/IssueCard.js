@@ -49,14 +49,12 @@ function IssueStatus(props) {
 }
 
 function IssueAssignee(props) {
-    if (!props.assignee) return null;
-    return <Tooltip content={props.assignee.name}>
-        <Avatar size='small' src={props.assignee.avatarUrl}/>
+    return <Tooltip content={props.assignee ? props.assignee.name : 'Unassigned'}>
+        <Avatar size='small' src={props.assignee?.avatarUrl}/>
     </Tooltip>;
 }
 
 function IssueEstimation(props) {
-    if (!props.storyPoints) return null;
     return <Tooltip content={props.storyPoints ? `${props.storyPoints} Story Points` : 'No estimation'}>
         <Badge>{props.storyPoints || '-'}</Badge>
     </Tooltip>
