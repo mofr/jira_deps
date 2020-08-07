@@ -8,9 +8,9 @@ test('simple integers 1', () => {
         [11, [7, 5]],
         [8, [7, 3]],
     ])).toStrictEqual([
-        [3, 5, 7],
-        [8, 11],
-        [2, 9, 10],
+        new Set([3, 5, 7]),
+        new Set([8, 11]),
+        new Set([2, 9, 10]),
     ]);
 });
 
@@ -20,8 +20,8 @@ test('simple integers 2', () => {
         [3, [4]],
         [5, [6]],
     ])).toStrictEqual([
-        [2, 4, 6],
-        [1, 3, 5],
+        new Set([2, 4, 6]),
+        new Set([1, 3, 5]),
     ]);
 });
 
@@ -33,9 +33,9 @@ test('simple strings', () => {
         ['11', ['7', '5']],
         ['8', ['7', '3']],
     ])).toStrictEqual([
-        ['3', '5', '7'],
-        ['8', '11'],
-        ['2', '9', '10'],
+        new Set(['3', '5', '7']),
+        new Set(['8', '11']),
+        new Set(['2', '9', '10']),
     ]);
 });
 
@@ -47,9 +47,9 @@ test('ignore self dependencies', () => {
         [11, [7, 5]],
         [8, [7, 3]],
     ])).toStrictEqual([
-        [3, 5, 7],
-        [8, 11],
-        [2, 9, 10],
+        new Set([3, 5, 7]),
+        new Set([8, 11]),
+        new Set([2, 9, 10]),
     ]);
 });
 
@@ -57,7 +57,7 @@ test('single node without links', () => {
     expect(toposort([
         [2, []],
     ])).toStrictEqual([
-        [2],
+        new Set([2]),
     ]);
 });
 
@@ -67,7 +67,7 @@ test('multiple nodes without links', () => {
         [3, []],
         [5, []],
     ])).toStrictEqual([
-        [2, 3, 5],
+        new Set([2, 3, 5]),
     ]);
 });
 
@@ -75,7 +75,7 @@ test('single self link', () => {
     expect(toposort([
         [2, [2]],
     ])).toStrictEqual([
-        [2],
+        new Set([2]),
     ]);
 });
 

@@ -2,12 +2,6 @@ export class CircularDependencyError extends Error {
 
 }
 
-class Node {
-    constructor(item, dependencies = []) {
-        this.item = item;
-        this.dependencies = new Set(dependencies);
-    }
-}
 
 function toposort(input) {
     /*
@@ -19,40 +13,41 @@ function toposort(input) {
     if (input.length === 0) {
         return [];
     }
-    let data = {};
+    const graph = new Map();
     for (const [item, precedingItems] of input) {
-        data[item] = new Node(item, precedingItems);
+        graph.set(item, new Set(precedingItems));
 
         // Ignore self dependencies
-        data[item].dependencies.delete(item);
+        graph.get(item).delete(item);
 
         for (const precedingItem of precedingItems) {
-            if (!(precedingItem in data)) {
-                data[precedingItem] = new Node(precedingItem);
+            if (!graph.has(precedingItem)) {
+                graph.set(precedingItem, new Set());
             }
         }
     }
 
     const result = [];
     while (true) {
-        const independents = [];
-        for (const key in data) {
-            if (data[key].dependencies.size === 0)
-                independents.push(data[key].item);
+        const independents = new Set();
+        for (const [key, precedingItems] of graph) {
+            if (precedingItems.size === 0)
+                independents.add(key);
         }
-        if (independents.length === 0)
+        if (independents.size === 0)
             break;
         result.push(independents);
         for (const independent of independents) {
-            delete data[independent];
-            for (const key in data) {
-                data[key].dependencies.delete(independent);
+            graph.delete(independent);
+            for (const precedingItems of graph.values()) {
+                precedingItems.delete(independent);
             }
         }
     }
 
-    if (Object.keys(data).length !== 0)
+    if (graph.size !== 0) {
         throw new CircularDependencyError();
+    }
 
     return result;
 }
