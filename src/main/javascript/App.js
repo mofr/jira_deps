@@ -18,12 +18,12 @@ class App extends React.Component {
 
     render() {
         if (this.state.loading) {
-            return <Centered><Spinner size='large'/></Centered>
+            return <Centered horizontal={true} vertical={true}><Spinner size='large'/></Centered>
         }
 
         const layers = this.sortIssues();
 
-        return <Centered>
+        return <Centered horizontal={true}>
             <ColumnGroup>
                 {layers.map(layer =>
                     <Column>
