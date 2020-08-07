@@ -10,7 +10,7 @@ import styled from 'styled-components';
 function IssueCard(props) {
     return <Card>
         <span>{props.title}</span>
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+        <div style={{display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between'}}>
             <div style={{display: 'flex', alignItems: 'center'}}>
                 <IssueTypeIcon type={props.type}/>
                 <IssueLink href={props.link}>{props.id}</IssueLink>
@@ -26,7 +26,7 @@ function IssueCard(props) {
 
 const IssueLink = styled.a`
   color: gray;
-  margin: 6px;
+  margin: 0 6px;
   font-weight: 600;
   white-space: nowrap;
 `;
